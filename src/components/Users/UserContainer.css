@@ -1,0 +1,32 @@
+.user_items_container {
+  display: flex;
+  flex-direction: column;
+}
+
+.user_item {
+  display: flex;
+  justify-content: space-between;
+}
+
+.user_photo_bio {
+  display: flex;
+}
+
+.small_rounded_photo {
+  width: 80px;
+  height: 80px;
+  border-radius: 9999px;
+  object-fit: cover;
+}
+
+@media screen and (max-width: 480px) {
+  .small_rounded_photo {
+    width: 50px;
+    height: 50px;
+  }
+}
+
+.view_btn {
+  background: var(--light-bg);
+  border-color: var(--btn-border-color);
+}
